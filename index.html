@@ -5,14 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="./main.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Weather Web App</title>
 </head>
 <body>
-    <h1>Weather App (Prototype)</h1>
-    <form>
-        <input type="text"/>
-        <button type="submit">Submit</button>
-    </form>
+    <header>
+        <h1>Weather App (Prototype)</h1>
+    </header>
+    <section align="center" class="form">
+        <img src="https://c.tenor.com/3vaKOC2sIigAAAAC/soul-eater-sun.gif" width="200px" alt="happy sun">
+        <form align="center">
+            <input type="text" placeholder="City, Country" />
+            <input type="number" min="1" max="3"  id="days" placeholder="#">
+            <button>Submit</button>
+        </form>
+    </section>
+    <main>
+        <article class="current">
+            <h3 class="name"></h3>
+            <img align="middle" id="current_icon">
+            <h4 id="current_desc"></h4>
+            <p id="current_temp"></p>
+        </article>
+        <section class="forecast">
+            Text test
+        </section>
+    </main>
 </body>
 </html>

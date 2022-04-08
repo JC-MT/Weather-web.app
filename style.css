@@ -1,0 +1,97 @@
+h1{
+    top:50%;
+    left:50%;
+    width:50%;
+}
+
+input{
+    width: fit-content;
+    height: 25px;
+}
+button{
+    width: fit-content;
+}
+img{
+    border-radius: 100px;
+}
+
+.days{
+    width: 25px;
+    text-align: center;
+}
+
+.current{
+        display: grid;
+        text-align: center;
+        margin-top: 20px;
+        gap: 0px;
+        grid-template-columns: 1fr;
+        margin: auto;
+        width: 25%;
+        justify-items: center;
+    }
+    
+.current p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: left;
+}
+.name {
+    margin: none;
+}
+.forecast{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 25px auto;
+    width: 75%;
+}
+.name {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS Style below sourced from https://codepen.io/P1N2O/pen/pyBNzX
+by: Manuel Pinto */
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
