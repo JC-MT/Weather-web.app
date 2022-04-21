@@ -1,89 +1,69 @@
-h1{
-    top:50%;
-    left:50%;
-    width:50%;
+body {
+    display: grid;
+    gap: 1.5rem;
 }
 
-input{
-    width: fit-content;
-    height: 25px;
+.button {
+    border-radius: 5px;
+    text-align: center;
+    display: inline;
 }
 
-button{
-    width: fit-content;
+.form {
+    color: white;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(10, 128, 118);
 }
 
-img{
-    border-radius: 100px;
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-.days{
-    width: 25px;
+.temp-converter {
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#calculation {
+    margin-top: 10px;
+}
+
+.location{
+    background-color: rgb(220, 220, 220);
+    grid-column: span 3;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border: 2px solid rgb(10, 128, 118);
     text-align: center;
 }
 
-.current {
-        display: grid;
-        text-align: center;
-        gap: 0px;
-        grid-template-columns: 1fr;
-        margin: auto;
-        width: 50%;
-        justify-items: center;
-        margin-top: 0%;
-        margin-bottom: 0%;
-    }
+h4,
+ul{
+    margin-top: 0%;
+}
 
 .forecast{
     display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 25px auto;
-    width: 75%;
+    grid-column: span 3;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
 }
 
-#current_name {
-    margin-top: 10px;
-    margin: none;
-}
-
-#current_temp {
-    font-size: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CSS Style below sourced from https://codepen.io/P1N2O/pen/pyBNzX
-by: Manuel Pinto */
-body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+#today,
+#tomorrow,
+#dayAfterTomorrow {
+    background-color: rgb(220, 220, 220);
+    border: 2px solid rgb(10, 128, 118);
+    height: fit-content;
 }
