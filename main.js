@@ -50,7 +50,12 @@ function getWeather(city) {
 }
 
 const getError = (err) => {
-  headingCity.textContent = err.error.message;
+  console.log(err, err.error.message)
+  if (err.error.code === 1003){
+    headingCity.textContent = "Please provide a location"
+  } else {
+    headingCity.textContent = err.error.message;
+  }
 
   const weatherInfo = document.querySelectorAll("p")
   for (let p of weatherInfo){
